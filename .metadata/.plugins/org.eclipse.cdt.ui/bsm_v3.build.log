@@ -1,0 +1,1289 @@
+18:41:38 **** Incremental Build of configuration Debug for project bsm_v3 ****
+make -j16 all 
+docker pull microros/micro_ros_static_library_builder:foxy && docker run --rm -v /home/frank/Pictures/bsm:/project --env MICROROS_LIBRARY_FOLDER=micro_ros_stm32cubemx_utils/microros_static_library_ide microros/micro_ros_static_library_builder:foxy
+foxy: Pulling from microros/micro_ros_static_library_builder
+Digest: sha256:bda0dcca059534cfc39f1fb2744bf58807acb8c6215a33f17fed2a9af15501a7
+Status: Image is up to date for microros/micro_ros_static_library_builder:foxy
+docker.io/microros/micro_ros_static_library_builder:foxy
+dos2unix: converting file /project/micro_ros_stm32cubemx_utils/microros_static_library_ide/library_generation/library_generation.sh to Unix format...
+Found CFLAGS:
+-------------
+-ffunction-sections -fdata-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -O0
+-------------
+Get:1 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
+Get:2 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/restricted amd64 Packages [33.4 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [11.3 MB]
+Get:7 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [3330 kB]
+Get:8 http://packages.ros.org/ros2/ubuntu focal InRelease [4685 B]
+Get:9 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [29.7 kB]
+Get:10 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [1172 kB]
+Get:11 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [177 kB]
+Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [1275 kB]
+Get:13 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [32.4 kB]
+Get:14 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [3345 kB]
+Get:15 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [3196 kB]
+Get:16 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [3807 kB]
+Get:17 http://packages.ros.org/ros2/ubuntu focal/main amd64 Packages [1191 kB]
+Get:18 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1469 kB]
+Get:19 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [55.2 kB]
+Get:20 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [28.6 kB]
+Fetched 31.1 MB in 1min 44s (300 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  binutils-arm-none-eabi libnewlib-arm-none-eabi libnewlib-dev
+  libstdc++-arm-none-eabi-newlib
+Suggested packages:
+  libnewlib-doc
+The following NEW packages will be installed:
+  binutils-arm-none-eabi gcc-arm-none-eabi libnewlib-arm-none-eabi
+  libnewlib-dev libstdc++-arm-none-eabi-newlib
+0 upgraded, 5 newly installed, 0 to remove and 301 not upgraded.
+Need to get 271 MB of archives.
+After this operation, 2340 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu focal/universe amd64 binutils-arm-none-eabi amd64 2.34-4ubuntu1+13ubuntu1 [2571 kB]
+Get:2 http://archive.ubuntu.com/ubuntu focal/universe amd64 gcc-arm-none-eabi amd64 15:9-2019-q4-0ubuntu1 [31.6 MB]
+Get:3 http://archive.ubuntu.com/ubuntu focal/universe amd64 libnewlib-dev all 3.3.0-0ubuntu1 [131 kB]
+Get:4 http://archive.ubuntu.com/ubuntu focal/universe amd64 libnewlib-arm-none-eabi all 3.3.0-0ubuntu1 [34.5 MB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/universe amd64 libstdc++-arm-none-eabi-newlib all 15:9-2019-q4-0ubuntu1+12build2 [202 MB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 271 MB in 25s (10.7 MB/s)
+Selecting previously unselected package binutils-arm-none-eabi.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 59185 files and directories currently installed.)
+Preparing to unpack .../binutils-arm-none-eabi_2.34-4ubuntu1+13ubuntu1_amd64.deb ...
+Unpacking binutils-arm-none-eabi (2.34-4ubuntu1+13ubuntu1) ...
+Selecting previously unselected package gcc-arm-none-eabi.
+Preparing to unpack .../gcc-arm-none-eabi_15%3a9-2019-q4-0ubuntu1_amd64.deb ...
+Unpacking gcc-arm-none-eabi (15:9-2019-q4-0ubuntu1) ...
+Selecting previously unselected package libnewlib-dev.
+Preparing to unpack .../libnewlib-dev_3.3.0-0ubuntu1_all.deb ...
+Unpacking libnewlib-dev (3.3.0-0ubuntu1) ...
+Selecting previously unselected package libnewlib-arm-none-eabi.
+Preparing to unpack .../libnewlib-arm-none-eabi_3.3.0-0ubuntu1_all.deb ...
+Unpacking libnewlib-arm-none-eabi (3.3.0-0ubuntu1) ...
+Selecting previously unselected package libstdc++-arm-none-eabi-newlib.
+Preparing to unpack .../libstdc++-arm-none-eabi-newlib_15%3a9-2019-q4-0ubuntu1+12build2_all.deb ...
+Unpacking libstdc++-arm-none-eabi-newlib (15:9-2019-q4-0ubuntu1+12build2) ...
+Setting up binutils-arm-none-eabi (2.34-4ubuntu1+13ubuntu1) ...
+Setting up gcc-arm-none-eabi (15:9-2019-q4-0ubuntu1) ...
+Setting up libnewlib-dev (3.3.0-0ubuntu1) ...
+Setting up libnewlib-arm-none-eabi (3.3.0-0ubuntu1) ...
+Setting up libstdc++-arm-none-eabi-newlib (15:9-2019-q4-0ubuntu1+12build2) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.9) ...
+Creating firmware for generate_lib platform generic
+.......
+=== ./ament/ament_cmake (git) ===
+Cloning into '.'...
+=== ./ament/ament_index (git) ===
+Cloning into '.'...
+=== ./ament/ament_lint (git) ===
+Cloning into '.'...
+=== ./ament/ament_package (git) ===
+Cloning into '.'...
+=== ./ament/googletest (git) ===
+Cloning into '.'...
+=== ./ament/uncrustify_vendor (git) ===
+Cloning into '.'...
+=== ./ros2/ament_cmake_ros (git) ===
+Cloning into '.'...
+List of repositories is empty
+#All required rosdeps installed successfully
+..............
+=== ./ros2/common_interfaces (git) ===
+Cloning into '.'...
+=== ./ros2/example_interfaces (git) ===
+Cloning into '.'...
+=== ./ros2/libyaml_vendor (git) ===
+Cloning into '.'...
+=== ./ros2/rcl (git) ===
+Cloning into '.'...
+=== ./ros2/rcl_interfaces (git) ===
+Cloning into '.'...
+=== ./ros2/rcl_logging (git) ===
+Cloning into '.'...
+=== ./ros2/rcpputils (git) ===
+Cloning into '.'...
+=== ./ros2/rmw (git) ===
+Cloning into '.'...
+=== ./ros2/rmw_implementation (git) ===
+Cloning into '.'...
+=== ./ros2/rosidl (git) ===
+Cloning into '.'...
+=== ./ros2/rosidl_dds (git) ===
+Cloning into '.'...
+=== ./ros2/rosidl_defaults (git) ===
+Cloning into '.'...
+=== ./ros2/test_interface_files (git) ===
+Cloning into '.'...
+=== ./ros2/unique_identifier_msgs (git) ===
+Cloning into '.'...
+...........
+=== ./eProsima/Micro-CDR (git) ===
+Cloning into '.'...
+=== ./eProsima/Micro-XRCE-DDS-Client (git) ===
+Cloning into '.'...
+=== ./ros2/tinydir_vendor (git) ===
+Cloning into '.'...
+=== ./uros/micro_ros_msgs (git) ===
+Cloning into '.'...
+=== ./uros/rcl (git) ===
+Cloning into '.'...
+=== ./uros/rclc (git) ===
+Cloning into '.'...
+=== ./uros/rcutils (git) ===
+Cloning into '.'...
+=== ./uros/rmw_microxrcedds (git) ===
+Cloning into '.'...
+=== ./uros/rosidl_typesupport (git) ===
+Cloning into '.'...
+=== ./uros/rosidl_typesupport_microxrcedds (git) ===
+Cloning into '.'...
+=== ./uros/tracetools (git) ===
+Cloning into '.'...
+warning: redirecting to https://gitlab.com/micro-ROS/ros_tracing/ros2_tracing.git/
+Crosscompiled environment: cleaning path
+Starting >>> ament_package
+Starting >>> ament_lint
+Starting >>> gtest_vendor
+Starting >>> ament_cppcheck
+Starting >>> ament_pycodestyle
+Finished <<< gtest_vendor [0.58s]
+Starting >>> gmock_vendor
+Finished <<< gmock_vendor [0.15s]
+Finished <<< ament_pycodestyle [0.89s]
+Starting >>> ament_pyflakes
+Finished <<< ament_lint [0.92s]
+Finished <<< ament_package [0.93s]
+Finished <<< ament_cppcheck [0.92s]
+Starting >>> ament_cmake_core
+Starting >>> ament_flake8
+Finished <<< ament_cmake_core [0.32s]
+Starting >>> ament_cmake_libraries
+Starting >>> ament_cmake_export_libraries
+Starting >>> ament_cmake_python
+Starting >>> ament_cmake_include_directories
+Starting >>> ament_cmake_export_definitions
+Starting >>> ament_cmake_export_include_directories
+Starting >>> ament_cmake_export_link_flags
+Starting >>> ament_cmake_version
+Finished <<< ament_pyflakes [0.69s]
+Finished <<< ament_flake8 [0.68s]
+Starting >>> ament_pep257
+Starting >>> ament_mypy
+Finished <<< ament_cmake_include_directories [0.38s]
+Finished <<< ament_cmake_export_libraries [0.41s]
+Starting >>> ament_cmake_export_interfaces
+Starting >>> ament_cmake_export_targets
+Finished <<< ament_cmake_python [0.42s]
+Starting >>> ament_cmake_test
+Finished <<< ament_cmake_export_link_flags [0.65s]
+Finished <<< ament_cmake_libraries [0.70s]
+Finished <<< ament_cmake_version [0.69s]
+Starting >>> ament_cmake_export_dependencies
+Starting >>> ament_cmake_target_dependencies
+Finished <<< ament_cmake_export_definitions [0.71s]
+Finished <<< ament_cmake_export_include_directories [0.72s]
+Finished <<< ament_cmake_export_interfaces [0.54s]
+Finished <<< ament_cmake_export_targets [0.55s]
+Finished <<< ament_cmake_export_dependencies [0.31s]
+Finished <<< ament_cmake_target_dependencies [0.31s]
+Finished <<< ament_cmake_test [0.40s]
+Starting >>> ament_cmake
+Starting >>> ament_cmake_gtest
+Starting >>> ament_lint_auto
+Starting >>> ament_cmake_pytest
+Starting >>> ament_cmake_google_benchmark
+Starting >>> ament_cmake_nose
+Finished <<< ament_mypy [0.75s]
+Finished <<< ament_pep257 [0.76s]
+Starting >>> ament_copyright
+Finished <<< ament_cmake [0.36s]
+Finished <<< ament_cmake_gtest [0.37s]
+Finished <<< ament_lint_auto [0.37s]
+Starting >>> uncrustify_vendor
+Starting >>> ament_cmake_auto
+Starting >>> ament_cmake_gmock
+Finished <<< ament_cmake_pytest [0.38s]
+Finished <<< ament_cmake_nose [0.38s]
+Finished <<< ament_cmake_google_benchmark [0.39s]
+Finished <<< ament_copyright [0.55s]
+Starting >>> ament_lint_cmake
+Starting >>> ament_cpplint
+Starting >>> ament_xmllint
+Starting >>> ament_clang_format
+Starting >>> ament_clang_tidy
+Starting >>> ament_pclint
+Starting >>> domain_coordinator
+Starting >>> ament_index_python
+Finished <<< ament_cmake_gmock [0.32s]
+Finished <<< ament_cmake_auto [1.13s]
+Finished <<< uncrustify_vendor [1.22s]
+Starting >>> ament_uncrustify
+Finished <<< ament_lint_cmake [1.34s]
+Starting >>> ament_cmake_lint_cmake
+Finished <<< ament_xmllint [1.35s]
+Finished <<< domain_coordinator [1.34s]
+Finished <<< ament_cpplint [1.37s]
+Finished <<< ament_clang_format [1.38s]
+Finished <<< ament_clang_tidy [1.38s]
+Finished <<< ament_pclint [1.44s]
+Finished <<< ament_index_python [1.45s]
+Finished <<< ament_uncrustify [0.60s]
+Finished <<< ament_cmake_lint_cmake [0.28s]
+Starting >>> ament_cmake_copyright
+Finished <<< ament_cmake_copyright [0.22s]
+Starting >>> ament_cmake_cppcheck
+Starting >>> ament_cmake_cpplint
+Starting >>> ament_cmake_flake8
+Starting >>> ament_cmake_pep257
+Starting >>> ament_cmake_uncrustify
+Starting >>> ament_cmake_xmllint
+Starting >>> ament_cmake_clang_format
+Starting >>> ament_cmake_clang_tidy
+Starting >>> ament_cmake_mypy
+Starting >>> ament_cmake_pclint
+Starting >>> ament_cmake_pycodestyle
+Starting >>> ament_cmake_pyflakes
+Finished <<< ament_cmake_xmllint [0.43s]
+Finished <<< ament_cmake_clang_tidy [0.44s]
+Finished <<< ament_cmake_cpplint [0.51s]
+Finished <<< ament_cmake_mypy [0.49s]
+Finished <<< ament_cmake_cppcheck [0.54s]
+Finished <<< ament_cmake_pycodestyle [0.52s]
+Finished <<< ament_cmake_uncrustify [0.55s]
+Finished <<< ament_cmake_clang_format [0.55s]
+Finished <<< ament_cmake_flake8 [0.57s]
+Finished <<< ament_cmake_pep257 [0.57s]
+Finished <<< ament_cmake_pclint [0.56s]
+Starting >>> ament_lint_common
+Finished <<< ament_cmake_pyflakes [0.56s]
+Finished <<< ament_lint_common [0.24s]
+Starting >>> ament_cmake_ros
+Starting >>> ament_index_cpp
+Finished <<< ament_cmake_ros [0.30s]
+Finished <<< ament_index_cpp [3.60s]
+
+Summary: 60 packages finished [9.40s]
+#All required rosdeps installed successfully
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  javascript-common libjs-jquery libjs-jquery-hotkeys libjs-jquery-isonscreen
+  libjs-jquery-metadata libjs-jquery-tablesorter
+  libjs-jquery-throttle-debounce python3-cov-core python3-coverage
+  python3-nose2
+Suggested packages:
+  apache2 | lighttpd | httpd python-coverage-doc python-nose2-doc
+The following NEW packages will be installed:
+  javascript-common libjs-jquery libjs-jquery-hotkeys libjs-jquery-isonscreen
+  libjs-jquery-metadata libjs-jquery-tablesorter
+  libjs-jquery-throttle-debounce python3-cov-core python3-coverage
+  python3-nose2 python3-pytest-cov
+0 upgraded, 11 newly installed, 0 to remove and 301 not upgraded.
+Need to get 760 kB of archives.
+After this operation, 3500 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 libjs-jquery all 3.3.1~dfsg-3 [329 kB]
+Get:2 http://archive.ubuntu.com/ubuntu focal/universe amd64 libjs-jquery-hotkeys all 0~20130707+git2d51e3a9+dfsg-2ubuntu1 [11.4 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 javascript-common all 11 [6066 B]
+Get:4 http://archive.ubuntu.com/ubuntu focal/universe amd64 libjs-jquery-metadata all 12-1.1 [7032 B]
+Get:5 http://archive.ubuntu.com/ubuntu focal/universe amd64 libjs-jquery-tablesorter all 1:2.31.1+dfsg1-1 [175 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal/universe amd64 libjs-jquery-throttle-debounce all 1.1+dfsg.1-1 [6222 B]
+Get:7 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-coverage amd64 4.5.2+dfsg.1-4ubuntu1 [108 kB]
+Get:8 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-nose2 all 0.9.1-3ubuntu3 [88.2 kB]
+Get:9 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-cov-core all 1.15.0-3build1 [7652 B]
+Get:10 http://archive.ubuntu.com/ubuntu focal/universe amd64 libjs-jquery-isonscreen all 1.2.0-1 [3102 B]
+Get:11 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-pytest-cov all 2.8.1-1 [18.7 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 760 kB in 1s (884 kB/s)
+Selecting previously unselected package libjs-jquery.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 62365 files and directories currently installed.)
+Preparing to unpack .../00-libjs-jquery_3.3.1~dfsg-3_all.deb ...
+Unpacking libjs-jquery (3.3.1~dfsg-3) ...
+Selecting previously unselected package libjs-jquery-hotkeys.
+Preparing to unpack .../01-libjs-jquery-hotkeys_0~20130707+git2d51e3a9+dfsg-2ubuntu1_all.deb ...
+Unpacking libjs-jquery-hotkeys (0~20130707+git2d51e3a9+dfsg-2ubuntu1) ...
+Selecting previously unselected package javascript-common.
+Preparing to unpack .../02-javascript-common_11_all.deb ...
+Unpacking javascript-common (11) ...
+Selecting previously unselected package libjs-jquery-metadata.
+Preparing to unpack .../03-libjs-jquery-metadata_12-1.1_all.deb ...
+Unpacking libjs-jquery-metadata (12-1.1) ...
+Selecting previously unselected package libjs-jquery-tablesorter.
+Preparing to unpack .../04-libjs-jquery-tablesorter_1%3a2.31.1+dfsg1-1_all.deb ...
+Unpacking libjs-jquery-tablesorter (1:2.31.1+dfsg1-1) ...
+Selecting previously unselected package libjs-jquery-throttle-debounce.
+Preparing to unpack .../05-libjs-jquery-throttle-debounce_1.1+dfsg.1-1_all.deb ...
+Unpacking libjs-jquery-throttle-debounce (1.1+dfsg.1-1) ...
+Selecting previously unselected package python3-coverage.
+Preparing to unpack .../06-python3-coverage_4.5.2+dfsg.1-4ubuntu1_amd64.deb ...
+Unpacking python3-coverage (4.5.2+dfsg.1-4ubuntu1) ...
+Selecting previously unselected package python3-nose2.
+Preparing to unpack .../07-python3-nose2_0.9.1-3ubuntu3_all.deb ...
+Unpacking python3-nose2 (0.9.1-3ubuntu3) ...
+Selecting previously unselected package python3-cov-core.
+Preparing to unpack .../08-python3-cov-core_1.15.0-3build1_all.deb ...
+Unpacking python3-cov-core (1.15.0-3build1) ...
+Selecting previously unselected package libjs-jquery-isonscreen.
+Preparing to unpack .../09-libjs-jquery-isonscreen_1.2.0-1_all.deb ...
+Unpacking libjs-jquery-isonscreen (1.2.0-1) ...
+Selecting previously unselected package python3-pytest-cov.
+Preparing to unpack .../10-python3-pytest-cov_2.8.1-1_all.deb ...
+Unpacking python3-pytest-cov (2.8.1-1) ...
+Setting up javascript-common (11) ...
+Setting up python3-coverage (4.5.2+dfsg.1-4ubuntu1) ...
+Setting up python3-nose2 (0.9.1-3ubuntu3) ...
+Setting up libjs-jquery-throttle-debounce (1.1+dfsg.1-1) ...
+Setting up libjs-jquery (3.3.1~dfsg-3) ...
+Setting up libjs-jquery-hotkeys (0~20130707+git2d51e3a9+dfsg-2ubuntu1) ...
+Setting up python3-cov-core (1.15.0-3build1) ...
+Setting up libjs-jquery-metadata (12-1.1) ...
+Setting up libjs-jquery-isonscreen (1.2.0-1) ...
+Setting up libjs-jquery-tablesorter (1:2.31.1+dfsg1-1) ...
+Setting up python3-pytest-cov (2.8.1-1) ...
+[1mexecuting command [apt-get install -y python3-pytest-cov][0m
+#All required rosdeps installed successfully
+Cloning into 'geometry2'...
+=== ./control_msgs (git) ===
+Cloning into '.'...
+Crosscompiled environment: cleaning path
+Building firmware for generate_lib platform generic
+Using provided meta: /project/micro_ros_stm32cubemx_utils/microros_static_library_ide/library_generation/colcon.meta
+Starting >>> tinydir_vendor
+Starting >>> rosidl_adapter
+Starting >>> rosidl_typesupport_interface
+Starting >>> microcdr
+Starting >>> rmw_implementation_cmake
+Starting >>> tracetools
+Starting >>> tracetools_trace
+Starting >>> test_interface_files
+Starting >>> tracetools_read
+Starting >>> libyaml_vendor
+Finished <<< rosidl_typesupport_interface [0.54s]
+Finished <<< rmw_implementation_cmake [0.54s]
+Finished <<< rosidl_adapter [0.57s]
+Starting >>> rosidl_parser
+Finished <<< test_interface_files [0.57s]
+Finished <<< tracetools [0.90s]
+Finished <<< tracetools_trace [0.90s]
+Starting >>> tracetools_launch
+Starting >>> ros2trace
+Finished <<< tracetools_read [1.18s]
+Finished <<< microcdr [1.26s]
+Starting >>> microxrcedds_client
+Finished <<< rosidl_parser [0.74s]
+Starting >>> rosidl_cmake
+Finished <<< ros2trace [0.84s]
+Finished <<< tracetools_launch [0.87s]
+Finished <<< rosidl_cmake [0.55s]
+Starting >>> rosidl_generator_dds_idl
+Finished <<< tinydir_vendor [2.01s]
+Starting >>> rcutils
+Finished <<< rosidl_generator_dds_idl [0.48s]
+--- stderr: microxrcedds_client
+Finished <<< microxrcedds_client [1.16s]
+/uros_ws/firmware/mcu_ws/eProsima/Micro-XRCE-DDS-Client/src/c/util/time.c: In function 'uxr_nanos':
+/uros_ws/firmware/mcu_ws/eProsima/Micro-XRCE-DDS-Client/src/c/util/time.c:60:5: warning: implicit declaration of function 'clock_gettime' [-Wimplicit-function-declaration]
+   60 |     clock_gettime(CLOCK_REALTIME, &ts);
+      |     ^~~~~~~~~~~~~
+---
+--- stderr: rcutils
+In file included from /uros_ws/firmware/mcu_ws/uros/rcutils/src/error_handling.c:35:
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/./error_handling_helpers.h: In function '__rcutils_convert_uint64_t_into_c_str':
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/./error_handling_helpers.h:109:48: warning: unused parameter 'number' [-Wunused-parameter]
+  109 | __rcutils_convert_uint64_t_into_c_str(uint64_t number, char * buffer, size_t buffer_size)
+      |                                       ~~~~~~~~~^~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/./error_handling_helpers.h:109:63: warning: unused parameter 'buffer' [-Wunused-parameter]
+  109 | __rcutils_convert_uint64_t_into_c_str(uint64_t number, char * buffer, size_t buffer_size)
+      |                                                        ~~~~~~~^~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/./error_handling_helpers.h:109:78: warning: unused parameter 'buffer_size' [-Wunused-parameter]
+  109 | __rcutils_convert_uint64_t_into_c_str(uint64_t number, char * buffer, size_t buffer_size)
+      |                                                                       ~~~~~~~^~~~~~~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/./error_handling_helpers.h: In function '__rcutils_format_error_string':
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/./error_handling_helpers.h:142:28: warning: unused parameter 'error_string' [-Wunused-parameter]
+Finished <<< rcutils [1.07s]
+  142 |   rcutils_error_string_t * error_string,
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+Starting >>> rosidl_runtime_c
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/./error_handling_helpers.h:143:33: warning: unused parameter 'error_state' [-Wunused-parameter]
+  143 |   const rcutils_error_state_t * error_state)
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/error_handling.c: In function 'rcutils_get_error_string':
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/error_handling.c:240:38: warning: initializer-string for array of chars is too long
+  240 |     return (rcutils_error_string_t) {"error not set"};  // NOLINT(readability/braces)
+      |                                      ^~~~~~~~~~~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/error_handling.c:240:38: note: (near initialization for '(anonymous).str')
+In file included from /uros_ws/firmware/mcu_ws/uros/rcutils/src/error_handling.c:35:
+At top level:
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/./error_handling_helpers.h:109:1: warning: '__rcutils_convert_uint64_t_into_c_str' defined but not used [-Wunused-function]
+  109 | __rcutils_convert_uint64_t_into_c_str(uint64_t number, char * buffer, size_t buffer_size)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/./error_handling_helpers.h:91:1: warning: '__rcutils_reverse_str' defined but not used [-Wunused-function]
+   91 | __rcutils_reverse_str(char * string_in, size_t string_len)
+      | ^~~~~~~~~~~~~~~~~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/logging.c: In function 'rcutils_get_env_var_zero_or_one':
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/logging.c:127:35: warning: unused parameter 'zero_semantic' [-Wunused-parameter]
+  127 |   const char * name, const char * zero_semantic,
+      |                      ~~~~~~~~~~~~~^~~~~~~~~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/logging.c:128:16: warning: unused parameter 'one_semantic' [-Wunused-parameter]
+  128 |   const char * one_semantic)
+      |   ~~~~~~~~~~~~~^~~~~~~~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/shared_library.c: In function 'rcutils_get_symbol':
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/shared_library.c:121:23: warning: implicit declaration of function 'dlsym' [-Wimplicit-function-declaration]
+  121 |   void * lib_symbol = dlsym(lib->lib_pointer, symbol_name);
+      |                       ^~~~~
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/shared_library.c:121:23: warning: initialization of 'void *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/shared_library.c:122:18: warning: implicit declaration of function 'dlerror'; did you mean 'perror'? [-Wimplicit-function-declaration]
+  122 |   char * error = dlerror();
+      |                  ^~~~~~~
+      |                  perror
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/shared_library.c:122:18: warning: initialization of 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/shared_library.c: In function 'rcutils_has_symbol':
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/shared_library.c:159:23: warning: initialization of 'void *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  159 |   void * lib_symbol = dlsym(lib->lib_pointer, symbol_name);
+      |                       ^~~~~
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/shared_library.c:160:20: warning: comparison between pointer and integer
+  160 |   return dlerror() == NULL && lib_symbol != 0;
+      |                    ^~
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/shared_library.c: In function 'rcutils_unload_shared_library':
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/shared_library.c:178:20: warning: implicit declaration of function 'dlclose'; did you mean 'pclose'? [-Wimplicit-function-declaration]
+  178 |   int error_code = dlclose(lib->lib_pointer);
+      |                    ^~~~~~~
+      |                    pclose
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/shared_library.c: In function 'rcutils_get_platform_library_name':
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/shared_library.c:201:16: warning: unused parameter 'buffer_size' [-Wunused-parameter]
+  201 |   unsigned int buffer_size,
+      |   ~~~~~~~~~~~~~^~~~~~~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/shared_library.c:202:8: warning: unused parameter 'debug' [-Wunused-parameter]
+  202 |   bool debug)
+      |        ^
+In function 'rcutils_char_array_strncat',
+    inlined from 'rcutils_char_array_strcat' at /uros_ws/firmware/mcu_ws/uros/rcutils/src/char_array.c:239:10:
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/char_array.c:224:3: warning: 'strncat' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  224 |   strncat(char_array->buffer, src, n);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/char_array.c: In function 'rcutils_char_array_strcat':
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/char_array.c:239:10: note: length computed here
+  239 |   return rcutils_char_array_strncat(char_array, src, strlen(src));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/atomic_64bits.c:53:10: warning: mismatch in argument 1 type of built-in function '__atomic_load_8'; expected 'const volatile void *' [-Wbuiltin-declaration-mismatch]
+   53 | uint64_t __atomic_load_8(uint64_t *mem, int model) {
+      |          ^~~~~~~~~~~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/atomic_64bits.c:62:6: warning: mismatch in argument 1 type of built-in function '__atomic_store_8'; expected 'volatile void *' [-Wbuiltin-declaration-mismatch]
+   62 | void __atomic_store_8(uint64_t *mem, uint64_t val, int model) {
+      |      ^~~~~~~~~~~~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/atomic_64bits.c:70:10: warning: mismatch in argument 1 type of built-in function '__atomic_exchange_8'; expected 'volatile void *' [-Wbuiltin-declaration-mismatch]
+   70 | uint64_t __atomic_exchange_8(uint64_t *mem, uint64_t val, int model) {
+      |          ^~~~~~~~~~~~~~~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/atomic_64bits.c:80:10: warning: mismatch in argument 1 type of built-in function '__atomic_fetch_add_8'; expected 'volatile void *' [-Wbuiltin-declaration-mismatch]
+   80 | uint64_t __atomic_fetch_add_8(uint64_t *mem, uint64_t val, int model) {
+      |          ^~~~~~~~~~~~~~~~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/time_unix.c:52:4: warning: #warning is a GCC extension
+Starting >>> rcl_logging_noop
+   52 | #  warning no monotonic clock function available
+      |    ^~~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/time_unix.c:52:4: warning: #warning no monotonic clock function available [-Wcpp]
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/time_unix.c: In function 'rcutils_system_time_now':
+/uros_ws/firmware/mcu_ws/uros/rcutils/src/time_unix.c:74:3: warning: implicit declaration of function 'clock_gettime' [-Wimplicit-function-declaration]
+   74 |   clock_gettime(CLOCK_REALTIME, &timespec_now);
+      |   ^~~~~~~~~~~~~
+---
+--- stderr: libyaml_vendor
+Finished <<< libyaml_vendor [3.12s]
+CMake Warning (dev) at CMakeLists.txt:55 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+/uros_ws/firmware/mcu_ws/build/libyaml_vendor/libyaml-10c9078-prefix/src/libyaml-10c9078/src/api.c: In function 'yaml_strdup':
+/uros_ws/firmware/mcu_ws/build/libyaml_vendor/libyaml-10c9078-prefix/src/libyaml-10c9078/src/api.c:66:27: warning: implicit declaration of function 'strdup'; did you mean 'strcmp'? [-Wimplicit-function-declaration]
+   66 |     return (yaml_char_t *)strdup((char *)str);
+      |                           ^~~~~~
+      |                           strcmp
+---
+Finished <<< rcl_logging_noop [0.62s]
+--- stderr: rcl_logging_noop
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  CMakeLists.txt:15 (find_package)
+
+
+---
+--- stderr: rosidl_runtime_c
+Finished <<< rosidl_runtime_c [0.72s]
+Starting >>> rmw
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  CMakeLists.txt:15 (find_package)
+
+
+---
+Starting >>> rosidl_generator_c
+Finished <<< rosidl_generator_c [0.48s]
+--- stderr: rmw
+Finished <<< rmw [0.72s]
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+Starting >>> rosidl_typesupport_microxrcedds_c
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  CMakeLists.txt:21 (find_package)
+
+
+In file included from /uros_ws/firmware/mcu_ws/ros2/rmw/rmw/src/validate_full_topic_name.c:17:
+/uros_ws/firmware/mcu_ws/ros2/rmw/rmw/src/validate_full_topic_name.c: In function 'rmw_validate_full_topic_name_with_size':
+/uros_ws/firmware/mcu_ws/ros2/rmw/rmw/src/validate_full_topic_name.c:106:29: warning: array subscript has type 'char' [-Wchar-subscripts]
+  106 |       if (isdigit(topic_name[i + 1]) != 0) {
+      |                   ~~~~~~~~~~^~~~~~~
+In file included from /uros_ws/firmware/mcu_ws/ros2/rmw/rmw/src/validate_node_name.c:17:
+/uros_ws/firmware/mcu_ws/ros2/rmw/rmw/src/validate_node_name.c: In function 'rmw_validate_node_name_with_size':
+/uros_ws/firmware/mcu_ws/ros2/rmw/rmw/src/validate_node_name.c:72:24: warning: array subscript has type 'char' [-Wchar-subscripts]
+   72 |   if (isdigit(node_name[0]) != 0) {
+      |               ~~~~~~~~~^~~
+---
+--- stderr: rosidl_typesupport_microxrcedds_c
+Finished <<< rosidl_typesupport_microxrcedds_c [0.53s]
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+  CMakeLists.txt:22 (find_package)
+
+
+---
+Starting >>> rosidl_typesupport_c
+--- stderr: rosidl_typesupport_c
+Finished <<< rosidl_typesupport_c [0.65s]
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  CMakeLists.txt:21 (find_package)
+
+
+---
+Starting >>> rosidl_default_runtime
+Starting >>> rosidl_default_generators
+Finished <<< rosidl_default_runtime [0.31s]
+Finished <<< rosidl_default_generators [0.32s]
+Starting >>> builtin_interfaces
+Starting >>> micro_ros_msgs
+Starting >>> unique_identifier_msgs
+Starting >>> lifecycle_msgs
+Starting >>> std_srvs
+Finished <<< unique_identifier_msgs [1.64s]
+--- stderr: unique_identifier_msgs
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/rmwConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/rosidl_typesupport_microxrcedds_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)
+  CMakeLists.txt:15 (find_package)
+
+
+---
+--- stderr: builtin_interfaces
+Finished <<< builtin_interfaces [1.79s]
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/rmwConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/rosidl_typesupport_microxrcedds_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)
+  CMakeLists.txt:14 (find_package)
+
+
+---
+Starting >>> std_msgs
+Starting >>> action_msgs
+Starting >>> rcl_interfaces
+Starting >>> rosgraph_msgs
+Starting >>> statistics_msgs
+--- stderr: micro_ros_msgs
+Finished <<< micro_ros_msgs [1.97s]
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/rmwConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/rosidl_typesupport_microxrcedds_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)
+  CMakeLists.txt:20 (find_package)
+
+
+---
+Starting >>> rmw_microxrcedds
+Finished <<< std_srvs [2.10s]
+--- stderr: std_srvs
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/rmwConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/rosidl_typesupport_microxrcedds_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)
+  CMakeLists.txt:14 (find_package)
+
+
+---
+Finished <<< rmw_microxrcedds [1.32s]
+--- stderr: rmw_microxrcedds
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  CMakeLists.txt:27 (find_package)
+
+
+---
+Starting >>> rmw_implementation
+Starting >>> rosidl_typesupport_microxrcedds_test_msg
+--- stderr: lifecycle_msgs
+Finished <<< lifecycle_msgs [3.53s]
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/rmwConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/rosidl_typesupport_microxrcedds_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)
+  CMakeLists.txt:14 (find_package)
+
+
+---
+Finished <<< rosgraph_msgs [2.02s]
+--- stderr: rosgraph_msgs
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+  CMakeLists.txt:14 (find_package)
+
+
+---
+Finished <<< rosidl_typesupport_microxrcedds_test_msg [0.75s]
+Starting >>> rosidl_typesupport_microxrcedds_c_tests
+--- stderr: rmw_implementation
+Finished <<< rmw_implementation [0.80s]
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rmw_microxrcedds/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rmw_microxrcedds/cmake/rmw_microxrceddsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rmw_implementation_cmake/cmake/get_default_rmw_implementation.cmake:62 (find_package)
+  CMakeLists.txt:22 (get_default_rmw_implementation)
+
+
+---
+--- stderr: statistics_msgs
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+  CMakeLists.txt:15 (find_package)
+
+
+---
+Finished <<< statistics_msgs [2.65s]
+Finished <<< action_msgs [2.83s]
+--- stderr: action_msgs
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+  CMakeLists.txt:14 (find_package)
+
+
+---
+Starting >>> test_msgs
+Starting >>> example_interfaces
+Finished <<< rosidl_typesupport_microxrcedds_c_tests [0.78s]
+--- stderr: rcl_interfaces
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/rmwConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/rosidl_typesupport_microxrcedds_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)
+Finished <<< rcl_interfaces [6.39s]
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)
+  CMakeLists.txt:14 (find_package)
+
+
+---
+Starting >>> composition_interfaces
+--- stderr: std_msgs
+Finished <<< std_msgs [7.26s]
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+Starting >>> geometry_msgs
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+  CMakeLists.txt:14 (find_package)
+
+
+---
+Starting >>> actionlib_msgs
+Starting >>> tracetools_test
+Finished <<< tracetools_test [0.80s]
+--- stderr: actionlib_msgs
+Finished <<< actionlib_msgs [2.29s]
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+  CMakeLists.txt:14 (find_package)
+
+
+---
+--- stderr: composition_interfaces
+Finished <<< composition_interfaces [3.32s]
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/rmwConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/rosidl_typesupport_microxrcedds_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)
+  CMakeLists.txt:14 (find_package)
+
+
+---
+--- stderr: example_interfaces
+Finished <<< example_interfaces [8.38s]
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/rmwConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/rosidl_typesupport_microxrcedds_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)
+  CMakeLists.txt:14 (find_package)
+
+
+---
+Finished <<< test_msgs [9.55s]
+--- stderr: test_msgs
+Starting >>> rcl
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+  CMakeLists.txt:19 (find_package)
+
+
+---
+Starting >>> test_rmw_implementation
+--- stderr: geometry_msgs
+Finished <<< geometry_msgs [5.68s]
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/rmwConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/rosidl_typesupport_microxrcedds_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)
+Starting >>> sensor_msgs
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)
+  CMakeLists.txt:14 (find_package)
+
+
+---
+Starting >>> trajectory_msgs
+Starting >>> diagnostic_msgs
+Starting >>> nav_msgs
+Starting >>> shape_msgs
+Starting >>> visualization_msgs
+Starting >>> tf2_msgs
+Finished <<< test_rmw_implementation [0.72s]
+--- stderr: rcl
+Finished <<< rcl [1.52s]
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rcl_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rcl_interfaces/cmake/rcl_interfacesConfig.cmake:41 (include)
+  CMakeLists.txt:10 (find_package)
+
+
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl/src/rcl/init.c: In function 'rcl_init':
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl/src/rcl/init.c:191:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+  191 | #endif RCL_COMMAND_LINE_ENABLED
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl/src/rcl/graph.c: In function '__validate_node_name_and_namespace':
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl/src/rcl/graph.c:52:18: warning: unused variable 'msg' [-Wunused-variable]
+Starting >>> rclc
+   52 |     const char * msg = rmw_namespace_validation_result_string(validation_result);
+      |                  ^~~
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl/src/rcl/graph.c:64:18: warning: unused variable 'msg' [-Wunused-variable]
+   64 |     const char * msg = rmw_node_name_validation_result_string(validation_result);
+      |                  ^~~
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl/src/rcl/graph.c: In function '__rcl_get_info_by_topic':
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl/src/rcl/graph.c:457:22: warning: variable 'error_string' set but not used [-Wunused-but-set-variable]
+  457 |   rmw_error_string_t error_string;
+      |                      ^~~~~~~~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl/src/rcl/init_options.c: In function 'rcl_init_options_copy':
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl/src/rcl/init_options.c:94:24: warning: unused variable 'error_string' [-Wunused-variable]
+   94 |     rmw_error_string_t error_string = rmw_get_error_string();
+      |                        ^~~~~~~~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl/src/rcl/init_options.c:112:24: warning: unused variable 'error_string' [-Wunused-variable]
+  112 |     rmw_error_string_t error_string = rmw_get_error_string();
+      |                        ^~~~~~~~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl/src/rcl/node.c: In function 'rcl_node_init':
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl/src/rcl/node.c:169:18: warning: unused variable 'msg' [-Wunused-variable]
+  169 |     const char * msg = rmw_node_name_validation_result_string(validation_result);
+      |                  ^~~
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl/src/rcl/node.c:201:18: warning: unused variable 'msg' [-Wunused-variable]
+  201 |     const char * msg = rmw_namespace_validation_result_string(validation_result);
+      |                  ^~~
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl/src/rcl/rmw_implementation_identifier_check.c: In function 'rcl_rmw_implementation_identifier_check':
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl/src/rcl/rmw_implementation_identifier_check.c:136:34: warning: unused variable 'rmw_error_msg' [-Wunused-variable]
+  136 |     const rcutils_error_string_t rmw_error_msg = rcl_get_error_string();
+      |                                  ^~~~~~~~~~~~~
+At top level:
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl/src/rcl/rmw_implementation_identifier_check.c:168:13: warning: 'initialize' defined but not used [-Wunused-function]
+  168 | INITIALIZER(initialize) {
+      |             ^~~~~~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl/src/rcl/rmw_implementation_identifier_check.c:54:15: note: in definition of macro 'INITIALIZER'
+   54 |   static void f(void)
+      |               ^
+In file included from /uros_ws/firmware/mcu_ws/uros/rcl/rcl/src/rcl/validate_topic_name.c:22:
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl/src/rcl/validate_topic_name.c: In function 'rcl_validate_topic_name_with_size':
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl/src/rcl/validate_topic_name.c:58:25: warning: array subscript has type 'char' [-Wchar-subscripts]
+   58 |   if (isdigit(topic_name[0]) != 0) {
+      |               ~~~~~~~~~~^~~
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl/src/rcl/validate_topic_name.c:84:27: warning: array subscript has type 'char' [-Wchar-subscripts]
+   84 |         isdigit(topic_name[i]) != 0 &&
+      |                 ~~~~~~~~~~^~~
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl/src/rcl/validate_topic_name.c:179:29: warning: array subscript has type 'char' [-Wchar-subscripts]
+  179 |       if (isdigit(topic_name[i + 1]) != 0) {
+      |                   ~~~~~~~~~~^~~~~~~
+---
+Starting >>> rcl_lifecycle
+Starting >>> rcl_action
+--- stderr: rcl_lifecycle
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/lifecycle_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/lifecycle_msgs/cmake/lifecycle_msgsConfig.cmake:41 (include)
+  CMakeLists.txt:7 (find_package)
+
+
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl_lifecycle/src/rcl_lifecycle.c: In function 'rcl_lifecycle_state_machine_fini':
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl_lifecycle/src/rcl_lifecycle.c:262:24: warning: unused variable 'error_string' [-Wunused-variable]
+  262 |     rcl_error_string_t error_string = rcl_get_error_string();
+      |                        ^~~~~~~~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl_lifecycle/src/rcl_lifecycle.c:272:24: warning: unused variable 'error_string' [-Wunused-variable]
+  272 |     rcl_error_string_t error_string = rcl_get_error_string();
+      |                        ^~~~~~~~~~~~
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl_lifecycle/src/rcl_lifecycle.c: In function '_trigger_transition':
+/uros_ws/firmware/mcu_ws/uros/rcl/rcl_lifecycle/src/rcl_lifecycle.c:365:26: warning: unused variable 'error_string' [-Wunused-variable]
+Finished <<< rcl_lifecycle [1.78s]
+  365 |       rcl_error_string_t error_string = rcl_get_error_string();
+      |                          ^~~~~~~~~~~~
+---
+--- stderr: rcl_action
+Finished <<< rcl_action [1.86s]
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/action_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/action_msgs/cmake/action_msgsConfig.cmake:41 (include)
+  CMakeLists.txt:7 (find_package)
+
+
+---
+Finished <<< rclc [1.93s]
+--- stderr: rclc
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rcl_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rcl_interfaces/cmake/rcl_interfacesConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rcl/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rcl/cmake/rclConfig.cmake:41 (include)
+  CMakeLists.txt:31 (find_package)
+
+
+/uros_ws/firmware/mcu_ws/uros/rclc/rclc/src/rclc/executor_handle.c: In function 'rclc_executor_handle_print':
+/uros_ws/firmware/mcu_ws/uros/rclc/rclc/src/rclc/executor_handle.c:84:10: warning: variable 'typeName' set but not used [-Wunused-but-set-variable]
+   84 |   char * typeName;
+      |          ^~~~~~~~
+---
+Starting >>> rclc_lifecycle
+Starting >>> rclc_parameter
+Finished <<< trajectory_msgs [3.69s]
+--- stderr: trajectory_msgs
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+  CMakeLists.txt:14 (find_package)
+
+
+---
+Starting >>> control_msgs
+--- stderr: shape_msgs
+Finished <<< shape_msgs [3.89s]
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/std_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/std_msgs/cmake/std_msgsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/geometry_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/geometry_msgs/cmake/geometry_msgsConfig.cmake:41 (include)
+  CMakeLists.txt:14 (find_package)
+
+
+---
+--- stderr: rclc_lifecycle
+Finished <<< rclc_lifecycle [1.51s]
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/lifecycle_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/lifecycle_msgs/cmake/lifecycle_msgsConfig.cmake:41 (include)
+  CMakeLists.txt:11 (find_package)
+
+
+---
+--- stderr: tf2_msgs
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/rmwConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/rosidl_typesupport_microxrcedds_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)
+  CMakeLists.txt:13 (find_package)
+
+
+---
+Finished <<< tf2_msgs [4.39s]
+--- stderr: rclc_parameter
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+Finished <<< rclc_parameter [1.61s]
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rcl_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rcl_interfaces/cmake/rcl_interfacesConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rcl/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rcl/cmake/rclConfig.cmake:41 (include)
+  CMakeLists.txt:34 (find_package)
+
+
+---
+Finished <<< diagnostic_msgs [4.54s]
+--- stderr: diagnostic_msgs
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/rmwConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/rosidl_typesupport_microxrcedds_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)
+  CMakeLists.txt:14 (find_package)
+
+
+---
+--- stderr: nav_msgs
+Finished <<< nav_msgs [4.75s]
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+  CMakeLists.txt:14 (find_package)
+
+
+---
+Finished <<< visualization_msgs [6.44s]
+--- stderr: visualization_msgs
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+  CMakeLists.txt:14 (find_package)
+
+
+---
+--- stderr: control_msgs
+Finished <<< control_msgs [6.40s]
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+  CMakeLists.txt:14 (find_package)
+
+
+---
+--- stderr: sensor_msgs
+Finished <<< sensor_msgs [10.7s]
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+  CMakeLists.txt:14 (find_package)
+
+
+---
+Starting >>> stereo_msgs
+Starting >>> sensor_msgs_py
+Finished <<< sensor_msgs_py [0.63s]
+Finished <<< stereo_msgs [1.70s]
+--- stderr: stereo_msgs
+CMake Warning at /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /uros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rmw/cmake/rmwConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_microxrcedds_c/cmake/rosidl_typesupport_microxrcedds_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)
+  /uros_ws/firmware/mcu_ws/install/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)
+  CMakeLists.txt:14 (find_package)
+
+
+---
+Starting >>> common_interfaces
+Finished <<< common_interfaces [0.33s]
+
+Summary: 63 packages finished [33.7s]
+  40 packages had stderr output: action_msgs actionlib_msgs builtin_interfaces composition_interfaces control_msgs diagnostic_msgs example_interfaces geometry_msgs libyaml_vendor lifecycle_msgs micro_ros_msgs microxrcedds_client nav_msgs rcl rcl_action rcl_interfaces rcl_lifecycle rcl_logging_noop rclc rclc_lifecycle rclc_parameter rcutils rmw rmw_implementation rmw_microxrcedds rosgraph_msgs rosidl_runtime_c rosidl_typesupport_c rosidl_typesupport_microxrcedds_c sensor_msgs shape_msgs statistics_msgs std_msgs std_srvs stereo_msgs test_msgs tf2_msgs trajectory_msgs unique_identifier_msgs visualization_msgs
+ 
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/FreeRTOS/cmsis_os2.d" -MT"Middlewares/FreeRTOS/cmsis_os2.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/FreeRTOS/cmsis_os2.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/croutine.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/FreeRTOS/croutine.d" -MT"Middlewares/FreeRTOS/croutine.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/FreeRTOS/croutine.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/FreeRTOS/event_groups.d" -MT"Middlewares/FreeRTOS/event_groups.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/FreeRTOS/event_groups.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/FreeRTOS/heap_4.d" -MT"Middlewares/FreeRTOS/heap_4.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/FreeRTOS/heap_4.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/list.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/FreeRTOS/list.d" -MT"Middlewares/FreeRTOS/list.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/FreeRTOS/list.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/FreeRTOS/port.d" -MT"Middlewares/FreeRTOS/port.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/FreeRTOS/port.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/queue.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/FreeRTOS/queue.d" -MT"Middlewares/FreeRTOS/queue.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/FreeRTOS/queue.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/FreeRTOS/stream_buffer.d" -MT"Middlewares/FreeRTOS/stream_buffer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/FreeRTOS/stream_buffer.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/tasks.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/FreeRTOS/tasks.d" -MT"Middlewares/FreeRTOS/tasks.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/FreeRTOS/tasks.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/timers.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/FreeRTOS/timers.d" -MT"Middlewares/FreeRTOS/timers.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/FreeRTOS/timers.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc "../Core/Src/custom_memory_manager.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/custom_memory_manager.d" -MT"Core/Src/custom_memory_manager.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/custom_memory_manager.o"
+arm-none-eabi-gcc "../Core/Src/dma_transport.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/dma_transport.d" -MT"Core/Src/dma_transport.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/dma_transport.o"
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/freertos.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/include -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/home/frank/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/dma_transport.c:1:10: fatal error: uxr/client/transport.h: No such file or directory
+    1 | #include <uxr/client/transport.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [Core/Src/subdir.mk:52: Core/Src/dma_transport.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+../Core/Src/main.c:25:10: fatal error: rcl/rcl.h: No such file or directory
+   25 | #include <rcl/rcl.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+make[1]: *** [Core/Src/subdir.mk:52: Core/Src/main.o] Error 1
+make: *** [makefile:59: all] Error 2
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+
+18:45:10 Build Failed. 6 errors, 48 warnings. (took 3m:31s.660ms)
+

@@ -1,0 +1,7 @@
+21:49:08 **** Incremental Build of configuration Default for project stm32_ros ****
+make all 
+make: *** No rule to make target 'all'.  Stop.
+"make all" terminated with exit code 2. Build might be incomplete.
+
+21:49:08 Build Failed. 1 errors, 0 warnings. (took 174ms)
+

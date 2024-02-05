@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+test\:Debug/build=Debug
+test\:Debug/generator=Unix Makefiles
+test\:Debug/misc_command=-DCMAKE_TOOLCHAIN_FILE\=cubeide-gcc.cmake -DCMAKE_BUILD_TYPE\=Debug
+test\:Debug/src=.
